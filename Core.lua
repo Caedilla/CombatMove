@@ -1,7 +1,7 @@
 
 local f = CreateFrame('Frame', nil, UIParent)
 
-local function toggleCTM(self, event, ...)
+local function ToggleCTM(self, event, ...)
 	if event == 'PLAYER_ENTERING_WORLD' then
 		if not InCombatLockdown() then
 			SetCVar('autoInteract',1)
@@ -18,4 +18,4 @@ end
 f:RegisterEvent('PLAYER_ENTERING_WORLD')
 f:RegisterEvent('PLAYER_REGEN_ENABLED')
 f:RegisterEvent('PLAYER_REGEN_DISABLED')
-f:SetScript('OnEvent', toggleCTM)
+f:SetScript('OnEvent', ToggleCTM)
