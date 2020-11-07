@@ -1,0 +1,6 @@
+﻿## Interface: 90001
+## Title: CombatMove
+## Notes: Disables click-to-move in combat, and enables it out of combat.
+## Author: Raeli
+
+Core.lua
